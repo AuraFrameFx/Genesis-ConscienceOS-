@@ -1,14 +1,14 @@
 version: 2
 updates:
+  # GitHub Actions updates
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-  - package-ecosystem: "npm"
+      interval: "weekly"
+    
+  # Gradle dependencies (for your bleeding-edge needs)
+  - package-ecosystem: "gradle"  
     directory: "/"
     schedule:
-      interval: "daily"
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "daily"
+      interval: "daily" # Bleeding-edge needs frequent updates
+    open-pull-requests-limit: 10
